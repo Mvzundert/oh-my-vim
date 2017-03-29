@@ -38,7 +38,7 @@ set showmatch           " highlight matching [{()}]
 set magic               " For regular expressions turn magic on
 set backspace=2         " backspace over everything in insert mode
 
-" ============= Folding =============
+" ============= Folding ============
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
 set foldnestmax=10      " 10 nested fold max
@@ -59,4 +59,8 @@ set background=dark	    " theming of VIM background
 colorscheme badwolf     " awesome colorscheme https://github.com/sjl/badwolf
 
 " ============= Functions ============= 
+
+" ============= Mappings =============
+
+
 
