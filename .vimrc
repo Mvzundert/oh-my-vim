@@ -13,6 +13,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Close vim if nerdtree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Enable indenting based on filetype
+filetype plugin indent on
+
 " ============= Config =============
 set nocompatible        " Necesary for lots of cool vim things
 syntax enable           " enable syntax processing
