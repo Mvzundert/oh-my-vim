@@ -1,9 +1,6 @@
 " Pathogen makes plugins easy https://github.com/tpope/vim-pathogen
 call pathogen#infect()
 
-" ============= Usefull plugins =============
-" https://valloric.github.io/YouCompleteMe/
-
 " Nerd Tree stuff
 autocmd vimenter * NERDTree " Start nerdTree on startup
 autocmd StdinReadPre * let s:std_in=1 "  
@@ -61,6 +58,5 @@ colorscheme badwolf     " awesome colorscheme https://github.com/sjl/badwolf
 " ============= Functions ============= 
 
 " ============= Mappings =============
-
 
 
