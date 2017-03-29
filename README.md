@@ -6,6 +6,7 @@ In the end this might up being something a bit more modular in approach.
 I'm still unsure how to keep this updated but for now here's an overview of the
 plugins i used.
 
+# Installed in bundle/
 bundle/badwolf (v1.6.0-6-g834fbe9)
 
 bundle/nerdtree (5.0.0-104-g649d313)
