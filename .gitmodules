@@ -22,6 +22,3 @@
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "nerdtree-git-plugin"]
-	path = nerdtree-git-plugin
-	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
