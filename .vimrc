@@ -43,7 +43,7 @@ if has("autocmd")
 endif
 
 " ==========================
-" ====== Command  ==========
+" ====== Menu  =============
 " ==========================
 " Show command in the bottom bar
 set showcmd
@@ -122,11 +122,11 @@ set noswapfile
 " run. For more themese check bundle/colorscheme
 set background=dark
 colorscheme Tomorrow-Night-Eighties
-" colorscheme thor
 
 " ==========================
 " ======= Functions ========
 " ==========================
+
 
 
 " ==========================
