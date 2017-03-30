@@ -115,7 +115,6 @@ set noswapfile
 " run. For more themese check bundle/colorscheme
 set background=dark
 colorscheme Tomorrow-Night-Eighties
-" colorscheme thor
 
 " ==========================
 " ======= Functions ========
