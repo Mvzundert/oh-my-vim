@@ -56,7 +56,7 @@ set noswapfile
 
 " ============= Theming =============
 set background=dark	    " theming of VIM background
-colorscheme badwolf     " For more theme's see: Bundle/colorschemes
+colorscheme badwolf     " For more colorschemes check bundle/colorscheme
 
 " ============= Functions ============= 
 
