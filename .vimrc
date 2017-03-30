@@ -115,12 +115,18 @@ set noswapfile
 " run. For more themese check bundle/colorscheme
 set background=dark
 colorscheme Tomorrow-Night-Eighties
+" colorscheme thor
 
 " ==========================
 " ======= Functions ========
 " ==========================
 " Close vim if nerdtree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
 " ==========================
 " ======= Mappings =========
