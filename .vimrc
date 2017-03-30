@@ -16,10 +16,10 @@ autocmd vimenter * NERDTree
 " Go to previous (last accessed) window.
 autocmd VimEnter * wincmd p
 autocmd StdinReadPre * let s:std_in=1 "  
-" Always open nerdTree
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Show hidden files by default
 let NERDTreeShowHidden=1
+" Always open nerdTree
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if nerdtree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -34,6 +34,11 @@ syntax enable
 
 " Enable indenting based on filetype
 filetype plugin indent on
+
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
 " ==========================
 " ====== Command  ==========
@@ -120,13 +125,7 @@ colorscheme Tomorrow-Night-Eighties
 " ==========================
 " ======= Functions ========
 " ==========================
-" Close vim if nerdtree is the only thing open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" Source the vimrc file after saving it
-if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
-endif
 
 " ==========================
 " ======= Mappings =========
