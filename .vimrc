@@ -10,9 +10,8 @@ let NERDTreeShowHidden=1 " Show hidden files by default
 " Mapping ctrl+n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-" Close vim if nerdtree is the only thing open (proved to be a nuisance so I
-" commented it out
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Close vim if nerdtree is the only thing open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Enable indenting based on filetype
 filetype plugin indent on
