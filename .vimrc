@@ -23,6 +23,8 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if nerdtree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+let g:NERDTreeShowIgnoredStatus = 1
+
 " ==========================
 " ======= Config ===========
 " ==========================
@@ -132,6 +134,4 @@ colorscheme Tomorrow-Night-Eighties
 " ==========================
 " Mapping ctrl+n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
-" Map opening vimrc from anywhere by using your leader
-map <leader>vimrc :tabe ~/.vim/.vimrc<cr>
 
