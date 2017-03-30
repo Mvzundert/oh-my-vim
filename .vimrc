@@ -115,14 +115,19 @@ set noswapfile
 " run. For more themese check bundle/colorscheme
 set background=dark
 colorscheme Tomorrow-Night-Eighties
+" colorscheme thor
 
 " ==========================
 " ======= Functions ========
 " ==========================
+" Close vim if nerdtree is the only thing open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ==========================
 " ======= Mappings =========
 " ==========================
 " Mapping ctrl+n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
+" Map opening vimrc from anywhere by using your leader
+map <leader>vimrc :tabe ~/.vim/.vimrc<cr>
 
