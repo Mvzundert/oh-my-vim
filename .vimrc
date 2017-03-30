@@ -1,6 +1,6 @@
 " ==========================
 " ======= Pathogen =========
-" ==========================i
+" ==========================
 " Pathogen needs to be at the top of your .vimrc file
 " if you want it to actually work don't move it anywere else.
 
