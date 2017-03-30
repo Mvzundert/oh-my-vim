@@ -13,6 +13,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Close vim if nerdtree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Enable indenting based on filetype
+filetype plugin indent on
+
 " ============= Config =============
 set nocompatible        " Necesary for lots of cool vim things
 syntax enable           " enable syntax processing
@@ -53,7 +56,7 @@ set noswapfile
 
 " ============= Theming =============
 set background=dark	    " theming of VIM background
-colorscheme badwolf     " awesome colorscheme https://github.com/sjl/badwolf
+colorscheme badwolf     " For more colorschemes check bundle/colorscheme
 
 " ============= Functions ============= 
 
