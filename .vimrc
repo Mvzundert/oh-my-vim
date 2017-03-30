@@ -2,10 +2,16 @@
 call pathogen#infect()
 
 " Nerd Tree stuff
-autocmd vimenter * NERDTree " Start nerdTree on startup
+" Start nerdTree on startup
+autocmd vimenter * NERDTree 
+
+" Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
 autocmd StdinReadPre * let s:std_in=1 "  
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif "Always open NerdTree
-let NERDTreeShowHidden=1 " Show hidden files by default
+" Always open nerdTree
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Show hidden files by default
+let NERDTreeShowHidden=1
 
 " Mapping ctrl+n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -17,46 +23,76 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 filetype plugin indent on
 
 " ============= Config =============
-set nocompatible        " Necesary for lots of cool vim things
-syntax enable           " enable syntax processing
+" Necessary for lots of cool vim things, makes it no live in the past.
+set nocompatible
+
+" Enable Syntax processing
+syntax enable
 
 " ============= Command  =============
-set showcmd             " show command in bottom bar
-set wildmenu            " visual autocomplete for command menu
+" Show command in the bottom bar
+set showcmd
+" Visual Autocomplete for the command menu
+set wildmenu
 
 " ============= Tabs =============
-set tabstop=4      	    " number of visual spaces per TAB
-set softtabstop=4   	" number of spaces in tab when editing
-set expandtab       	" tabs are spaces
+" Number of visual spaces per TAB
+set tabstop=4
+" Number of spaces in TAB when editing
+set softtabstop=4
+" Tabs are spaces
+set expandtab
 
 " ============= Lines/Cursor =============
-set number              " Line numbers
-set cursorline          " Highlight the cursor line.
+" Hyrid line numbers are awesome, we show the line
+" number and the relative number @ the same time.
+" Make sure you have vim 7.4 or higher to support this,
+" else turn one of these off
+set relativenumber 
+set number
+" Highlight the line on which the cursor lives.
+set cursorline
 
 " ============= highligh magic =============
-set showmatch           " highlight matching [{()}]
-set magic               " For regular expressions turn magic on
-set backspace=2         " backspace over everything in insert mode
+" Highlight matching [{()}] 
+set showmatch
+" Magic for doing regex stuff.
+set magic
+" Backspace over everything in insert mode... might not be the best idea.
+set backspace=2
 
 " ============= Folding ============
-set foldenable          " enable folding
-set foldlevelstart=10   " open most folds by default
-set foldnestmax=10      " 10 nested fold max
-set foldmethod=indent   " fold based on indent level
+" Enable folding
+set foldenable
+" Open most folds by default
+set foldlevelstart=10
+" 10 nested fold max
+set foldnestmax=10
+" Fold based on indent level.
+set foldmethod=indent
 
 " ============= Improve search =============
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
-set ignorecase		    " Ignore case when searching
+" Search as characters are entered
+set incsearch
+" Highlight matches
+set hlsearch
+" Ignore case when searching, this can be set or unset in command mode
+" but I prefer to have it set by defaut.
+set ignorecase
 
 " ============= No Backup =============
+" I don't think VIM should be storing any backups when
+" we have buffers we can use, feel free to disable this
+" if you prefer to have swap files etc.
 set nobackup
 set nowb
 set noswapfile
 
 " ============= Theming =============
-set background=dark	    " theming of VIM background
-colorscheme Tomorrow-Night-Eighties     " For more colorschemes check bundle/colorscheme
+" I like the darker themes as it's easier on the eyes in the long
+" run. For more themese check bundle/colorscheme
+set background=dark
+colorscheme Tomorrow-Night-Eighties
 
 " ============= Functions ============= 
 
