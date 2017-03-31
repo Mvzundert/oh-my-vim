@@ -45,6 +45,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let g:NERDTreeShowIgnoredStatus = 1
+let g:NERDTreeWinSize=30
 
 " ==========================
 " ======= Config ===========
@@ -155,3 +156,8 @@ colorscheme railscasts
 " Mapping ctrl+n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
+" Quickly find stuff in nerdTree
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
