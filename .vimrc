@@ -7,22 +7,15 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'Shougo/unite.vim'
-Plugin 'tpope/vim-commentary'
-Plugin 'fitztrev/vim-gitgutter'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" If there are any machine-specific tweaks for Vim, load them from the following file.
+try
+  source ~/.vim/config/plugins.vim
+catch
+  " No such file? No problem; just ignore it.
+  " Let Vundle manage Vundle, still required
+  " if we don't stuff breaks.
+  Plugin 'VundleVim/Vundle.vim'
+endtry
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,8 +37,10 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " Close vim if nerdtree is the only thing open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" show git ignored files.
 let g:NERDTreeShowIgnoredStatus = 1
-let g:NERDTreeWinSize=30
+" set the tree size
+let g:NERDTreeWinSize = 30
 
 " ==========================
 " ======= Config ===========
@@ -150,6 +145,7 @@ colorscheme railscasts
 
 
 
+
 " ==========================
 " ======= Mappings =========
 " ==========================
@@ -161,3 +157,8 @@ nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
+
