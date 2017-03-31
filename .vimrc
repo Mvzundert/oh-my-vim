@@ -1,11 +1,30 @@
 " ==========================
-" ======= Pathogen =========
+" ======= Vundle = =========
 " ==========================
-" Pathogen needs to be at the top of your .vimrc file
-" if you want it to actually work don't move it anywere else.
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" Pathogen makes plugins easy https://github.com/tpope/vim-pathogen
-call pathogen#infect()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'Shougo/unite.vim'
+Plugin 'tpope/vim-commentary'
+Plugin 'fitztrev/vim-gitgutter'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-surround'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " ==========================
 " ======Nerd Tree ==========
@@ -33,9 +52,6 @@ set nocompatible
 
 " Enable Syntax processing
 syntax enable
-
-" Enable indenting based on filetype
-filetype plugin indent on
 
 " Source the vimrc file after saving it
 if has("autocmd")
