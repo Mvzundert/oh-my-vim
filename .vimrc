@@ -5,12 +5,13 @@
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" If there are any machine-specific tweaks for Vim, load them from the following file.
-" Also the location of our plugins goes here.
+" If there are any machine-specific tweaks for Vim, load them from the
+" following files. Also the location of our plugins goes here.
 try
   source ~/.vim/config/plugins.vim
   source ~/.vim/config/mappings.vim
   source ~/.vim/config/functions.vim
+  source ~/.vim/config/tree.vim
 catch
   " No such file? No problem; just ignore it.
   " Let Vundle manage Vundle, still required
@@ -21,31 +22,6 @@ endtry
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" ==========================
-" ======Nerd Tree ==========
-" ==========================
-" Start nerdTree on startup
-autocmd vimenter * NERDTree 
-
-" Go to previous (last accessed) window.
-autocmd VimEnter * wincmd p
-autocmd StdinReadPre * let s:std_in=1 "  
-" Show hidden files by default
-let NERDTreeShowHidden=1
-" Always open nerdTree
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-" Close vim if nerdtree is the only thing open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" show git ignored files.
-let g:NERDTreeShowIgnoredStatus = 1
-" set the tree size
-let g:NERDTreeWinSize = 30
-" remove ? help from showing up
-let NERDTreeMinimalUI = 1
-" arrows!
-let NERDTreeDirArrows = 1
 
 " ==========================
 " ======= Config ===========
