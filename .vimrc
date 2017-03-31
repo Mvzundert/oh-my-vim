@@ -37,6 +37,9 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
+" Set using the system keyboard by default
+set clipboard=unnamed
+
 " ==========================
 " ====== Menu  =============
 " ==========================
@@ -69,6 +72,16 @@ set cursorline
 " Enable git information in the gutter.
 " Currently only supporting git.
 let g:gitgutter_enabled = 1
+
+" we handle longer lines.
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
+
+" We display tabs and line endings.
+set list
+set listchars=tab:▸\ ,eol:¬
 
 " ==========================
 " ===== highligh magic =====
