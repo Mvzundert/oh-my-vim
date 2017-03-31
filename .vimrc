@@ -21,8 +21,6 @@ Plugin 'fitztrev/vim-gitgutter'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
-Plugin 'powerline/powerline'
-
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
