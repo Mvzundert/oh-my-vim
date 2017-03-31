@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " If there are any machine-specific tweaks for Vim, load them from the following file.
+" Also the location of our plugins goes here.
 try
   source ~/.vim/config/plugins.vim
 catch
