@@ -9,6 +9,8 @@ call vundle#begin()
 " Also the location of our plugins goes here.
 try
   source ~/.vim/config/plugins.vim
+  source ~/.vim/config/mappings.vim
+  source ~/.vim/config/functions.vim
 catch
   " No such file? No problem; just ignore it.
   " Let Vundle manage Vundle, still required
@@ -142,20 +144,4 @@ set noswapfile
 " run. For more themese check bundle/colorscheme
 set background=dark
 colorscheme railscasts 
-" ==========================
-" ======= Functions ========
-" ==========================
-
-
-
-
-" ==========================
-" ======= Mappings =========
-" ==========================
-" Mapping ctrl+n to open nerdtree
-map <C-n> :NERDTreeToggle<CR>
-
-" Quickly find stuff in nerdTree
-nnoremap <silent> <Leader>v :NERDTreeFind<CR>
-
 
