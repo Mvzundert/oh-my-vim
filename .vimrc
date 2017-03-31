@@ -39,6 +39,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 let g:NERDTreeShowIgnoredStatus = 1
 " set the tree size
 let g:NERDTreeWinSize = 30
+" remove ? help from showing up
+let NERDTreeMinimalUI = 1
+" arrows!
+let NERDTreeDirArrows = 1
 
 " ==========================
 " ======= Config ===========
@@ -153,10 +157,4 @@ map <C-n> :NERDTreeToggle<CR>
 " Quickly find stuff in nerdTree
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
-
-noremap <silent> <C-S>          :update<CR>
-vnoremap <silent> <C-S>         <C-C>:update<CR>
-inoremap <silent> <C-S>         <C-O>:update<CR>
 
