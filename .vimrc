@@ -132,5 +132,5 @@ set noswapfile
 " I like the darker themes as it's easier on the eyes in the long
 " run. For more themese check bundle/colorscheme
 set background=dark
-colorscheme railscasts 
+colorscheme badwolf
 
