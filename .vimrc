@@ -40,6 +40,9 @@ endif
 " Set using the system keyboard by default
 set clipboard=unnamed
 
+" Always change to the current file dir
+set autochdir
+
 " ==========================
 " ====== Menu  =============
 " ==========================
