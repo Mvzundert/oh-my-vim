@@ -77,10 +77,10 @@ set cursorline
 let g:gitgutter_enabled = 1
 
 " we handle longer lines.
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set colorcolumn=85
+" set wrap
+" set textwidth=100
+" set formatoptions=qrn1
+" set colorcolumn=100
 
 " We display tabs and line endings.
 set list
