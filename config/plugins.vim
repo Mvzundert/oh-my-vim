@@ -16,4 +16,5 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tobyS/pdv'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'gabrielelana/vim-markdown'
 
