@@ -17,4 +17,4 @@ Plugin 'tobyS/pdv'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'gabrielelana/vim-markdown'
-
+Plugin 'christoomey/vim-tmux-navigator'
