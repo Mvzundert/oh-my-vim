@@ -42,6 +42,10 @@ set clipboard=unnamed
 
 " Always change to the current file dir
 set autochdir
+" Detect when a file is changed
+set autoread
+" Experimenting with mouse focus
+set mouse=a
 
 " ==========================
 " ====== Menu  =============
@@ -54,12 +58,20 @@ set wildmenu
 " ==========================
 "======== Tabs =============
 " ==========================
+ " tabs ftw
+set noexpandtab
+" tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
+set smarttab
 " Number of visual spaces per TAB
 set tabstop=4
 " Number of spaces in TAB when editing
 set softtabstop=4
 " Tabs are spaces
 set expandtab
+" number of spaces to use for indent and unindent
+set shiftwidth=4
+" round indent to a multiple of 'shiftwidth'
+set shiftround 
 
 " ==========================
 " ======= Lines/Cursor =====
