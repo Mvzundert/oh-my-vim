@@ -46,7 +46,8 @@ set autochdir
 set autoread
 " Experimenting with mouse focus
 set mouse=a
-
+" Autocomplete
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 " ==========================
 " ====== Menu  =============
 " ==========================
