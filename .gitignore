@@ -2,4 +2,4 @@
 /bundle/*
 
 # Don't exclude the folder
-/bundle/.gitkeep
+!/bundle/.gitkeep
