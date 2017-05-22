@@ -1,2 +1,5 @@
-/bundle
+# Exclude the bundle folder content
+/bundle/*
 
+# Don't exclude the folder
+/bundle/.gitkeep
