@@ -48,6 +48,9 @@ set autoread
 set mouse=a
 " Autocomplete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" Encoding seems to be a thing...
+scriptencoding utf-8
+set encoding=utf-8
 " ==========================
 " ====== Menu  =============
 " ==========================
