@@ -68,7 +68,7 @@ set tabstop=4
 " Number of spaces in TAB when editing
 set softtabstop=4
 " Tabs are spaces
-set expandtab
+ set expandtab
 " number of spaces to use for indent and unindent
 set shiftwidth=4
 " round indent to a multiple of 'shiftwidth'
@@ -99,7 +99,8 @@ set diffopt+=vertical
 
 " We display tabs and line endings.
 set list
-set listchars=tab:▸\ ,eol:¬
+"set listchars=tab:▸\ ,eol:¬
+set listchars=eol:~,tab:▸\ ,eol:¬,extends:>,precedes:<,space:_
 
 " ==========================
 " ===== highligh magic =====
