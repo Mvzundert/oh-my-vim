@@ -151,7 +151,5 @@ set noswapfile
 " ==========================
 " ======= Theming ==========
 " ==========================
-" I like the darker themes as it's easier on the eyes in the long
-" run. For more themese check bundle/colorscheme
-set background=dark
-colorscheme onedark
+" Make vim match the terminal theme.
+hi Normal ctermbg=none
