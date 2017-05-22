@@ -1,6 +1,9 @@
 " ==========================
 " ======= Mappings =========
 " ==========================
+" Map the leader
+let mapleader="@"
+
 " Mapping ctrl+n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
