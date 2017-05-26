@@ -20,5 +20,5 @@ Plugin 'gabrielelana/vim-markdown'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'majutsushi/tagbar'
 Plugin 'joshdick/onedark.vim'
-Plugin 'joonty/vim-phpqa'
+" Plugin 'joonty/vim-phpqa'
 
