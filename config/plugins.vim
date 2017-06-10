@@ -21,4 +21,4 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'majutsushi/tagbar'
 Plugin 'joshdick/onedark.vim'
 " Plugin 'joonty/vim-phpqa'
-
+Plugin 'posva/vim-vue'
