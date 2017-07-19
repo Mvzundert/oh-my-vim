@@ -51,6 +51,9 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 " Encoding seems to be a thing...
 scriptencoding utf-8
 set encoding=utf-8
+" fix vue highlighting
+autocmd FileType vue syntax sync fromstart
+au BufRead,BufNewFile *.vue set ft=html
 " ==========================
 " ====== Menu  =============
 " ==========================
