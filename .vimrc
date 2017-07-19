@@ -103,7 +103,7 @@ set diffopt+=vertical
 " We display tabs and line endings.
 set list
 "set listchars=tab:▸\ ,eol:¬
-set listchars=eol:~,tab:▸\ ,eol:¬,extends:>,precedes:<,space:_
+" set listchars=eol:~,tab:▸\ ,eol:¬,extends:>,precedes:<,space:_
 
 " ==========================
 " ===== highligh magic =====
