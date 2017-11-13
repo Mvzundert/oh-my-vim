@@ -19,3 +19,6 @@ map <C-l> <C-W>l
 
 "Tagbar toggle option
 map <C-b> :TagbarToggle<CR>
+
+" Call PHP CS fixer
+nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>

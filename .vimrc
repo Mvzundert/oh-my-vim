@@ -62,9 +62,6 @@ au BufRead,BufNewFile *.vue set ft=html
 set showcmd
 " Visual Autocomplete for the command menu
 set wildmenu
-" Fix how CTRLP travels in folders
-let g:ctrlp_working_path_mode = 0
-
 " ==========================
 "======== Tabs =============
 " ==========================
