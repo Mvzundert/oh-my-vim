@@ -20,7 +20,7 @@ let g:airline_theme='behelit'
 " let g:php_cs_fixer_verbose = 0                    " Return the output of
 " command if 1, else an inline information.
 
-"" Fix how CTRLP travels in folders
+" Fix how CTRLP travels in folders
 let g:ctrlp_working_path_mode = 0
 " No max files makes searching way better
 let g:ctrlp_max_files=0

@@ -31,7 +31,7 @@ nmap <silent> <leader>tm :TestNearest<CR>
 " Run All The tests in the current file
 nmap <silent> <leader>tf :TestFile<CR>
 " Run All The Tests
-nmap <silent> <leader>ta :TestSuite<CR>
+nmap <silent> <leader>ta :!phpunit<CR>
 " Rerun latest
 nmap <silent> <leader>tr :TestLast<CR>
 

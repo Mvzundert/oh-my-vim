@@ -26,7 +26,7 @@ filetype plugin indent on    " required
 " ==========================
 " ======= Config ===========
 " ==========================
-" Necessary for lots of cool vim things, makes it no live in the past.
+" Necessary for lots of cool vim things, makes it not live in the past.
 set nocompatible
 
 " Enable Syntax processing
@@ -37,7 +37,7 @@ if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-" Set using the system keyboard by default
+" Set using the system clipboard by default
 set clipboard=unnamed
 
 " Always change to the current file dir
