@@ -22,3 +22,11 @@ map <C-b> :TagbarToggle<CR>
 
 " Call PHP CS fixer
 nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
+
+" run PHP unit tests
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>
+
