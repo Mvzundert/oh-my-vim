@@ -4,6 +4,9 @@
 " Map the leader
 let mapleader="@"
 
+" reload vimrc by issueing a command
+nmap <silent> <leader>rl :so $MYVIMRC
+
 " Mapping ctrl+n to open nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
@@ -23,10 +26,12 @@ map <C-b> :TagbarToggle<CR>
 " Call PHP CS fixer
 nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
 
-" run PHP unit tests
-nmap <silent> <leader>t :TestNearest<CR>
-nmap <silent> <leader>T :TestFile<CR>
-nmap <silent> <leader>a :TestSuite<CR>
-nmap <silent> <leader>l :TestLast<CR>
-nmap <silent> <leader>g :TestVisit<CR>
+" Run The Nearest Test
+nmap <silent> <leader>tm :TestNearest<CR>
+" Run All The tests in the current file
+nmap <silent> <leader>tf :TestFile<CR>
+" Run All The Tests
+nmap <silent> <leader>ta :TestSuite<CR>
+" Rerun latest
+nmap <silent> <leader>tr :TestLast<CR>
 
