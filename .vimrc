@@ -41,7 +41,7 @@ endif
 set clipboard=unnamed
 
 " Always change to the current file dir
-set autochdir
+" set autochdir
 " Detect when a file is changed
 set autoread
 " Experimenting with mouse focus
@@ -54,6 +54,7 @@ set encoding=utf-8
 " fix vue highlighting
 autocmd FileType vue syntax sync fromstart
 au BufRead,BufNewFile *.vue set ft=html
+
 " ==========================
 " ====== Menu  =============
 " ==========================
@@ -61,6 +62,8 @@ au BufRead,BufNewFile *.vue set ft=html
 set showcmd
 " Visual Autocomplete for the command menu
 set wildmenu
+" Fix how CTRLP travels in folders
+let g:ctrlp_working_path_mode = 0
 
 " ==========================
 "======== Tabs =============
@@ -101,12 +104,13 @@ set diffopt+=vertical
 " set wrap
 " set textwidth=100
 " set formatoptions=qrn1
-" set colorcolumn=100
+set colorcolumn=120
+highligh ColorColumn ctermbg=0 guibg=lightgrey
 
 " We display tabs and line endings.
 set list
-"set listchars=tab:▸\ ,eol:¬
-" set listchars=eol:~,tab:▸\ ,eol:¬,extends:>,precedes:<,space:_
+" set listchars=tab:▸\ ,eol:¬
+"set listchars=eol:~,tab:▸\ ,eol:¬,extends:>,precedes:<,space:_
 
 " ==========================
 " ===== highligh magic =====
@@ -156,3 +160,4 @@ set noswapfile
 " ==========================
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
+colorscheme hybrid_material
