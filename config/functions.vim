@@ -28,3 +28,11 @@ let g:ctrlp_max_files=0
 let g:ctrlp_max_depth=40
 " Ignore searching files that are in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Don't run tools on save (creates errors while using git diff in vim for some
+" reason)
+" Don't run messdetector on save (default = 1)
+let g:phpqa_messdetector_autorun = 0
+
+" Don't run codesniffer on save (default = 1)
+let g:phpqa_codesniffer_autorun = 0

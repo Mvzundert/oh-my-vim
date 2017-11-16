@@ -25,13 +25,13 @@ map <C-b> :TagbarToggle<CR>
 
 " Call PHP CS fixer
 nnoremap <silent><leader>pcf :call PhpCsFixerFixFile()<CR>
+nnoremap <silent><leader>php :Php<CR>
+nnoremap <silent><leader>phpcs :Phpcs<CR>
 
 " Run The Nearest Test
-nmap <silent> <leader>tm :TestNearest<CR>
+nmap <silent><leader>tm yiw:!phpunit --filter <C-R>"<CR>
 " Run All The tests in the current file
-nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>tf :!clear && phpunit %<CR>
 " Run All The Tests
-nmap <silent> <leader>ta :!phpunit<CR>
-" Rerun latest
-nmap <silent> <leader>tr :TestLast<CR>
+nmap <silent> <leader>ta :!clear && phpunit<CR>
 
