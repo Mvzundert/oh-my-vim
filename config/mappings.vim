@@ -29,7 +29,7 @@ nnoremap <silent><leader>php :Php<CR>
 nnoremap <silent><leader>phpcs :Phpcs<CR>
 
 " Run The Nearest Test
-nmap <silent><leader>tm yiw:!phpunit --filter <C-R>"<CR>
+nmap <silent><leader>tm yiw:!clear && phpunit --filter <C-R>"<CR>
 " Run All The tests in the current file
 nmap <silent> <leader>tf :!clear && phpunit %<CR>
 " Run All The Tests
