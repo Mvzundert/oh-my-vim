@@ -29,9 +29,9 @@ nnoremap <silent><leader>php :Php<CR>
 nnoremap <silent><leader>phpcs :Phpcs<CR>
 
 " Run The Nearest Test
-nmap <silent><leader>tm yiw:!clear && phpunit --filter <C-R>"<CR>
+nmap <silent><leader>tm yiw:!clear && phpunit --filter  --process-isolation <C-R>"<CR>
 " Run All The tests in the current file
-nmap <silent> <leader>tf :!clear && phpunit %<CR>
+nmap <silent> <leader>tf :!clear && phpunit %  --process-isolation<CR>
 " Run All The Tests
-nmap <silent> <leader>ta :!clear && phpunit<CR>
+nmap <silent> <leader>ta :!clear && phpunit  --process-isolation<CR>
 
