@@ -48,6 +48,7 @@ set autoread
 set mouse=a
 " Autocomplete
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 " Encoding seems to be a thing...
 scriptencoding utf-8
 set encoding=utf-8
@@ -106,7 +107,7 @@ highligh ColorColumn ctermbg=0 guibg=lightgrey
 
 " We display tabs and line endings.
 set list
-" set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬
 "set listchars=eol:~,tab:▸\ ,eol:¬,extends:>,precedes:<,space:_
 
 " ==========================
@@ -157,4 +158,4 @@ set noswapfile
 " ==========================
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
-colorscheme hybrid_material
+colorscheme hybrid_material 
