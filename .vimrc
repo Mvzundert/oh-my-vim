@@ -29,6 +29,14 @@ filetype plugin indent on    " required
 " Necessary for lots of cool vim things, makes it not live in the past.
 set nocompatible
 
+" Macvim wants it's own colors which I disprove off.
+if has("gui_macvim")
+    " set macvim specific stuff
+    let macvim_skip_colorscheme=1
+    set guifont=Menlo\ Regular:h14
+    cd ~/code
+endif
+
 " Enable Syntax processing
 syntax enable
 
@@ -158,4 +166,4 @@ set noswapfile
 " ==========================
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
-colorscheme hybrid_material 
+colorscheme hybrid_material
