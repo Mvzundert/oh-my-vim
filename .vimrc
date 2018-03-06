@@ -100,9 +100,6 @@ set relativenumber
 set number
 " Highlight the line on which the cursor lives.
 set cursorline
-" Enable git information in the gutter.
-" Currently only supporting git.
-let g:gitgutter_enabled = 1
 " Always use vertical diffs
 set diffopt+=vertical
 
