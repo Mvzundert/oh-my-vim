@@ -14,6 +14,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 
 Plugin 'janko-m/vim-test'
 Plugin 'posva/vim-vue'
+Plugin 'vim-syntastic/syntastic'
 
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'vim-airline/vim-airline'
