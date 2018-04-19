@@ -33,8 +33,8 @@ set nocompatible
 if has("gui_macvim")
     " set macvim specific stuff
     let macvim_skip_colorscheme=1
+    set background=dark
     set guifont=Menlo\ Regular:h14
-    cd ~/code
 endif
 
 " Enable Syntax processing
@@ -163,4 +163,4 @@ set noswapfile
 " ==========================
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
-colorscheme hybrid_material
+colorscheme molokai

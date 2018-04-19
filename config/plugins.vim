@@ -15,9 +15,11 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'janko-m/vim-test'
 Plugin 'posva/vim-vue'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'jelera/vim-javascript-syntax'
 
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'flazz/vim-colorschemes'
 
 Plugin 'gabrielelana/vim-markdown'
