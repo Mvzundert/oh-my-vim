@@ -8,15 +8,15 @@ call vundle#begin()
 " If there are any machine-specific tweaks for Vim, load them from the
 " following files. Also the location of our plugins goes here.
 try
-  source ~/.vim/config/plugins.vim
-  source ~/.vim/config/mappings.vim
-  source ~/.vim/config/functions.vim
-  source ~/.vim/config/tree.vim
+    source ~/.vim/config/plugins.vim
+    source ~/.vim/config/mappings.vim
+    source ~/.vim/config/functions.vim
+    source ~/.vim/config/tree.vim
 catch
-  " No such file? No problem; just ignore it.
-  " Let Vundle manage Vundle, still required
-  " if we don't stuff breaks.
-  Plugin 'VundleVim/Vundle.vim'
+    " No such file? No problem; just ignore it.
+    " Let Vundle manage Vundle, still required
+    " if we don't stuff breaks.
+    Plugin 'VundleVim/Vundle.vim'
 endtry
 
 " All of your Plugins must be added before the following line
@@ -42,7 +42,10 @@ syntax enable
 
 " Source the vimrc file after saving it
 if has("autocmd")
-  autocmd bufwritepost .vimrc source $MYVIMRC
+    augroup VimrcSource
+        autocmd! 
+        autocmd BufWritePost .vimrc source $MYVIMRC
+    augroup END
 endif
 
 " Set using the system clipboard by default
@@ -74,7 +77,7 @@ set wildmenu
 " ==========================
 "======== Tabs =============
 " ==========================
- " tabs ftw
+" tabs ftw
 set noexpandtab
 " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
 set smarttab
@@ -83,7 +86,7 @@ set tabstop=4
 " Number of spaces in TAB when editing
 set softtabstop=4
 " Tabs are spaces
- set expandtab
+set expandtab
 " number of spaces to use for indent and unindent
 set shiftwidth=4
 " round indent to a multiple of 'shiftwidth'
@@ -131,7 +134,7 @@ set backspace=2
 " Enable folding
 set foldenable
 " Open most folds by default
-set foldlevelstart=10
+set foldlevelstart=11
 " 10 nested fold max
 set foldnestmax=10
 " Fold based on indent level.
@@ -145,7 +148,7 @@ set incsearch
 " Highlight matches
 set hlsearch
 " Ignore case when searching, this can be set or unset in command mode
-" but I prefer to have it set by defaut.
+" but I prefer to have it set by default.
 set ignorecase
 
 " ==========================
