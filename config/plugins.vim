@@ -17,6 +17,10 @@ Plugin 'posva/vim-vue'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'jelera/vim-javascript-syntax'
 
+" Bundle 'Shougo/vimproc'
+" Bundle 'Shougo/unite.vim'
+" Bundle 'm2mdas/phpcomplete-extended'
+
 Plugin 'kristijanhusak/vim-hybrid-material'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'

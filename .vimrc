@@ -46,6 +46,18 @@ if has("autocmd")
         autocmd! 
         autocmd BufWritePost .vimrc source $MYVIMRC
     augroup END
+
+    augroup Vue
+        " fix vue highlighting
+        autocmd FileType vue syntax sync fromstart
+        au BufRead,BufNewFile *.vue set ft=html
+        autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
+    augroup END
+
+    augroup PHP
+        " Autocomplete
+        autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+    augroup END
 endif
 
 " Set using the system clipboard by default
@@ -57,15 +69,9 @@ set clipboard=unnamed
 set autoread
 " Experimenting with mouse focus
 set mouse=a
-" Autocomplete
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
 " Encoding seems to be a thing...
 scriptencoding utf-8
 set encoding=utf-8
-" fix vue highlighting
-autocmd FileType vue syntax sync fromstart
-au BufRead,BufNewFile *.vue set ft=html
 
 " ==========================
 " ====== Menu  =============
@@ -74,6 +80,7 @@ au BufRead,BufNewFile *.vue set ft=html
 set showcmd
 " Visual Autocomplete for the command menu
 set wildmenu
+
 " ==========================
 "======== Tabs =============
 " ==========================
@@ -119,7 +126,7 @@ set listchars=tab:▸\ ,eol:¬
 "set listchars=eol:~,tab:▸\ ,eol:¬,extends:>,precedes:<,space:_
 
 " ==========================
-" ===== highligh magic =====
+" ===== Highlight magic =====
 " ==========================
 " Highlight matching [{()}] 
 set showmatch
@@ -167,3 +174,9 @@ set noswapfile
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
 colorscheme molokai
+
+" ==========================
+" ======= Splits ===========
+" ==========================
+" Make splitting always start right
+set splitright
