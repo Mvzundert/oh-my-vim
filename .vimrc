@@ -117,7 +117,7 @@ set diffopt+=vertical
 " set wrap
 " set textwidth=100
 " set formatoptions=qrn1
-set colorcolumn=120
+set colorcolumn=180
 highligh ColorColumn ctermbg=0 guibg=lightgrey
 
 " We display tabs and line endings.
@@ -173,7 +173,7 @@ set noswapfile
 " ==========================
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
-colorscheme molokai
+colorscheme pride
 
 " ==========================
 " ======= Splits ===========

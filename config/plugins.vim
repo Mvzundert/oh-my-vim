@@ -22,6 +22,7 @@ Plugin 'jelera/vim-javascript-syntax'
 " Bundle 'm2mdas/phpcomplete-extended'
 
 Plugin 'kristijanhusak/vim-hybrid-material'
+" Plugin 'vietjtnguyen/toy-blocks'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
