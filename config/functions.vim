@@ -27,7 +27,8 @@ let g:syntastic_php_phpcs_args='--tab-width=0'
 " Enable completion where available. (hijacks omnicompletion)
 let g:ale_completion_enabled = 1
 
-" Fix files with prettier, and then ESLint.
+" Ale linters and fixers including hover balloons enabled.
+let g:ale_linters = {'php': ['phpcs']}
 let g:ale_fixers = {'php': ['phpcbf']}
 let b:ale_set_balloons = 1
 
