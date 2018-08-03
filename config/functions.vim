@@ -31,5 +31,3 @@ let g:ale_completion_enabled = 1
 let g:ale_fixers = {'php': ['phpcbf']}
 let b:ale_set_balloons = 1
 
-" Set this. Airline will handle the rest.
-let g:airline#extensions#ale#enabled = 1
