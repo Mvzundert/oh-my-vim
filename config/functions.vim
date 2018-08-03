@@ -23,3 +23,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_php_phpcs_args='--tab-width=0'
+
+" Enable completion where available. (hijacks omnicompletion)
+let g:ale_completion_enabled = 1
+
+" Fix files with prettier, and then ESLint.
+let g:ale_fixers = {'php': ['phpcbf']}
+let b:ale_set_balloons = 1
+
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1

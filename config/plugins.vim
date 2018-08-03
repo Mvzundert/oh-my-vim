@@ -16,6 +16,7 @@ Plugin 'janko-m/vim-test'
 Plugin 'posva/vim-vue'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'w0rp/ale'
 
 " Bundle 'Shougo/vimproc'
 " Bundle 'Shougo/unite.vim'
