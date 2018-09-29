@@ -173,7 +173,7 @@ set noswapfile
 " ==========================
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
-colorscheme pride
+colorscheme molokai_dark
 
 " ==========================
 " ======= Splits ===========
