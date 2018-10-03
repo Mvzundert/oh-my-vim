@@ -28,4 +28,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'flazz/vim-colorschemes'
 
+" Markdown and LaTex
 Plugin 'gabrielelana/vim-markdown'
+Plugin 'xuhdev/vim-latex-live-preview'

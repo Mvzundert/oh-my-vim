@@ -54,6 +54,10 @@ if has("autocmd")
         autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript.css
     augroup END
 
+    augroup Tex
+        autocmd Filetype tex setl updatetime=1
+    augroup END
+
     augroup PHP
         " Autocomplete
         autocmd FileType php set omnifunc=phpcomplete#CompletePHP
@@ -180,3 +184,5 @@ colorscheme molokai_dark
 " ==========================
 " Make splitting always start right
 set splitright
+
+

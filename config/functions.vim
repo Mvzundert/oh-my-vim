@@ -32,3 +32,6 @@ let g:ale_linters = {'php': ['phpcs']}
 let g:ale_fixers = {'php': ['phpcbf']}
 let b:ale_set_balloons = 1
 
+" LaTex stuff
+let g:livepreview_previewer = 'open -a Preview'
+let g:livepreview_cursorhold_recompile = 0
