@@ -3,7 +3,7 @@
 " ==========================
 let g:ctrlp_working_path_mode = 'c'
 let g:ctrlp_show_hidden = 1
-let g:airline_theme='behelit'
+let g:airline_theme='base16_monokai'
 
 " Fix how CTRLP travels in folders
 let g:ctrlp_working_path_mode = 0

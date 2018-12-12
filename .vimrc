@@ -47,6 +47,11 @@ if has("autocmd")
         autocmd BufWritePost .vimrc source $MYVIMRC
     augroup END
 
+    augroup VimColor
+        autocmd! 
+        autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE
+    augroup END
+
     augroup Vue
         " fix vue highlighting
         autocmd FileType vue syntax sync fromstart
@@ -122,7 +127,6 @@ set diffopt+=vertical
 " set textwidth=100
 " set formatoptions=qrn1
 set colorcolumn=180
-highligh ColorColumn ctermbg=0 guibg=lightgrey
 
 " We display tabs and line endings.
 set list
@@ -177,6 +181,9 @@ set noswapfile
 " ==========================
 " Make vim match the terminal theme.
 hi Normal ctermbg=none
+highlight NonText ctermbg=none
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
 colorscheme molokai_dark
 
 " ==========================
@@ -184,5 +191,4 @@ colorscheme molokai_dark
 " ==========================
 " Make splitting always start right
 set splitright
-
 
