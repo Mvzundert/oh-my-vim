@@ -67,6 +67,23 @@ if has("autocmd")
         " Autocomplete
         autocmd FileType php set omnifunc=phpcomplete#CompletePHP
     augroup END
+
+    augroup nerdtree
+        autocmd!
+        autocmd FileType nerdtree setlocal nolist " turn off whitespace characters
+        " Toggle NERDTree
+        function! ToggleNerdTree()
+            if @% != "" && @% !~ "Startify" &&
+                (!exists("g:NERDTree") || (g:NERDTree.ExistsForTab() && !g:NERDTree.IsOpen()))
+                :NERDTreeFind
+            else
+                :NERDTreeToggle
+            endif
+        endfunction       
+        " turn off line highlighting for performance
+        autocmd FileType nerdtree setlocal nocursorline 
+    augroup END
+
 endif
 
 " Set using the system clipboard by default
@@ -89,6 +106,10 @@ set encoding=utf-8
 set showcmd
 " Visual Autocomplete for the command menu
 set wildmenu
+" complete files like a shell
+"set wildmode=list:longest 
+" command bar height
+set cmdheight=1 
 
 " ==========================
 "======== Tabs =============
@@ -142,6 +163,8 @@ set showmatch
 set magic
 " Backspace over everything in insert mode... might not be the best idea.
 set backspace=2
+" highlight conflicts
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 " ==========================
 " ====== Folding ===========
@@ -179,12 +202,16 @@ set noswapfile
 " ==========================
 " ======= Theming ==========
 " ==========================
-" Make vim match the terminal theme.
-hi Normal ctermbg=none
-highlight NonText ctermbg=none
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+if filereadable(expand("~/.vimrc_background"))
+    let base16colorspace=256
+    source ~/.vimrc_background
+else
+    let g:onedark_termcolors=16
+    let g:onedark_terminal_italics=1
+    colorscheme onedark
+endif
 
-colorscheme molokai_dark
+highlight Normal ctermbg=none
 
 " ==========================
 " ======= Splits ===========

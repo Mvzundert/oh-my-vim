@@ -8,8 +8,8 @@ let mapleader="@"
 nmap <silent> <leader>rl :so $MYVIMRC
 
 " Mapping ctrl+n to open nerdtree
-map <C-n> :NERDTreeToggle<CR>
-
+"map <C-n> :NERDTreeToggle<CR>
+map <C-n> :call ToggleNerdTree() <CR>
 " Mapping ctrl+j/k/h/l to enable
 " to switch splits easier.
 map <C-j> <C-W>j

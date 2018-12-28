@@ -1,9 +1,15 @@
 " ==========================
 " ======= Functions ========
 " ==========================
+" Don't change to directory when selecting a file
+let g:startify_files_number = 5
+let g:startify_change_to_dir = 0
+let g:startify_custom_header = [ ]
+let g:startify_relative_path = 1
+let g:startify_use_env = 1
+
 let g:ctrlp_working_path_mode = 'c'
 let g:ctrlp_show_hidden = 1
-let g:airline_theme='base16_monokai'
 
 " Fix how CTRLP travels in folders
 let g:ctrlp_working_path_mode = 0

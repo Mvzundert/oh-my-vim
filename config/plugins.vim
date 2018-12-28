@@ -1,5 +1,5 @@
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+" Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -8,8 +8,14 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-sensible'
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+"Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Plugin 'ryanoasis/vim-devicons'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'mhinz/vim-startify'
+
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 
 Plugin 'janko-m/vim-test'
@@ -18,15 +24,10 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'w0rp/ale'
 
-" Bundle 'Shougo/vimproc'
-" Bundle 'Shougo/unite.vim'
-" Bundle 'm2mdas/phpcomplete-extended'
-
-Plugin 'kristijanhusak/vim-hybrid-material'
-" Plugin 'vietjtnguyen/toy-blocks'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'flazz/vim-colorschemes'
+Plugin 'itchyny/lightline.vim'
+Plugin 'nicknisi/vim-base16-lightline'
+Plugin 'chriskempson/base16-vim'
+Plugin 'joshdick/onedark.vim'
 
 " Markdown and LaTex
 Plugin 'gabrielelana/vim-markdown'
