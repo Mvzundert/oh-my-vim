@@ -29,7 +29,7 @@ let g:DevIconsEnableFolderExtensionPatternMatching = 1
 let NERDTreeDirArrowExpandable = "\u00a0" 
 let NERDTreeDirArrowCollapsible = "\u00a0" 
 " smiley face
-"let NERDTreeNodeDelimiter = "\u263a" 
+let NERDTreeNodeDelimiter = "-" 
 
 let NERDTreeShowHidden=1
 let NERDTreeDirArrowExpandable = '▷'
