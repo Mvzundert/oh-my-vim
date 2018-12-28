@@ -71,15 +71,6 @@ if has("autocmd")
     augroup nerdtree
         autocmd!
         autocmd FileType nerdtree setlocal nolist " turn off whitespace characters
-        " Toggle NERDTree
-        function! ToggleNerdTree()
-            if @% != "" && @% !~ "Startify" &&
-                (!exists("g:NERDTree") || (g:NERDTree.ExistsForTab() && !g:NERDTree.IsOpen()))
-                :NERDTreeFind
-            else
-                :NERDTreeToggle
-            endif
-        endfunction       
         " turn off line highlighting for performance
         autocmd FileType nerdtree setlocal nocursorline 
     augroup END
