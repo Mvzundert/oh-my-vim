@@ -33,7 +33,7 @@ let g:syntastic_php_phpcs_args='--tab-width=0'
 let g:ale_completion_enabled = 1
 
 "Add tab to complete without losing it for indents 
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+"let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 set completeopt=longest,menuone
 
