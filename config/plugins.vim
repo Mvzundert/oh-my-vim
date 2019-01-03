@@ -8,10 +8,9 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-sensible'
 
-"Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-" Plugin 'ryanoasis/vim-devicons'
+"Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'mhinz/vim-startify'
 
@@ -23,6 +22,8 @@ Plugin 'posva/vim-vue'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'w0rp/ale'
+Plugin 'ervandew/supertab'
+Plugin 'shawncplus/phpcomplete.vim'
 
 Plugin 'itchyny/lightline.vim'
 Plugin 'nicknisi/vim-base16-lightline'

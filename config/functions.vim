@@ -7,12 +7,11 @@ let g:startify_change_to_dir = 0
 let g:startify_custom_header = [ ]
 let g:startify_relative_path = 1
 let g:startify_use_env = 1
-
-let g:ctrlp_working_path_mode = 'c'
-let g:ctrlp_show_hidden = 1
-
+"
 " Fix how CTRLP travels in folders
+let g:ctrlp_show_hidden = 1
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_working_path_mode = 'c'
 " No max files makes searching way better
 let g:ctrlp_max_files=0
 " Fix the depth at which CTRLP indexes
@@ -32,6 +31,11 @@ let g:syntastic_php_phpcs_args='--tab-width=0'
 
 " Enable completion where available. (hijacks omnicompletion)
 let g:ale_completion_enabled = 1
+
+"Add tab to complete without losing it for indents 
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+set completeopt=longest,menuone
 
 " Ale linters and fixers including hover balloons enabled.
 let g:ale_linters = {'php': ['phpcs']}
