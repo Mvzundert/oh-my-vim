@@ -12,7 +12,7 @@ Plugin 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plugin 'mhinz/vim-startify'
+"Plugin 'mhinz/vim-startify'
 
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
@@ -25,7 +25,7 @@ Plugin 'w0rp/ale'
 
 " PHP Coding stuff
 Plugin 'arnaud-lb/vim-php-namespace'
-Plugin 'shawncplus/phpcomplete.vim'
+"Plugin 'shawncplus/phpcomplete.vim'
 
 Plugin 'itchyny/lightline.vim'
 Plugin 'nicknisi/vim-base16-lightline'
