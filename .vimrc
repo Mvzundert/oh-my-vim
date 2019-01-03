@@ -63,9 +63,18 @@ if has("autocmd")
         autocmd Filetype tex setl updatetime=1
     augroup END
 
+
     augroup PHP
         " Autocomplete
         autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+        function! IPhpInsertUse()
+            call PhpInsertUse()
+            call feedkeys('a', 'n')
+        endfunction
+
+        autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
+        autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
     augroup END
 
     augroup nerdtree
