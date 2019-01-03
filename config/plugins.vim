@@ -26,6 +26,7 @@ Plugin 'w0rp/ale'
 " PHP Coding stuff
 Plugin 'arnaud-lb/vim-php-namespace'
 Plugin 'shawncplus/phpcomplete.vim'
+Plugin 'majutshushi/tagbar'
 
 Plugin 'itchyny/lightline.vim'
 Plugin 'nicknisi/vim-base16-lightline'

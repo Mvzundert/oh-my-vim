@@ -11,6 +11,9 @@ nmap <silent> <leader>rl :so $MYVIMRC
 map <C-n> :NERDTreeToggle<CR>
 "map <C-n> :call ToggleNerdTree() <CR>
 
+" Toggle the tagbar
+nmap <C-m> :TagbarToggle<CR>
+
 " Mapping ctrl+j/k/h/l to enable
 " to switch splits easier.
 map <C-j> <C-W>j
@@ -25,10 +28,3 @@ nmap <silent> <leader>tf :!clear && phpunit % <CR>
 " Run All The Tests
 nmap <silent> <leader>ta :!clear && phpunit<CR>
 
-" Make the completion menu more logical.
-"inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
-"inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
-"inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
-"inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
-"inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
-"inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
