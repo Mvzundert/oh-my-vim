@@ -73,8 +73,13 @@ if has("autocmd")
             call feedkeys('a', 'n')
         endfunction
 
+        " Leader e to expand classes
         autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
         autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
+
+        " Leader u to insert use statements
+        autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
+        autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
     augroup END
 
     augroup nerdtree
