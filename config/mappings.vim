@@ -28,3 +28,8 @@ nmap <silent> <leader>tf :!clear && phpunit % <CR>
 " Run All The Tests
 nmap <silent> <leader>ta :!clear && phpunit<CR>
 
+" Disable the arrow keys...
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
