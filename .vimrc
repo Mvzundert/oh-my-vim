@@ -134,6 +134,8 @@ set shiftwidth=4
 " round indent to a multiple of 'shiftwidth'
 set shiftround 
 
+set showtabline=2
+
 " ==========================
 " ======= Lines/Cursor =====
 " ==========================
