@@ -9,6 +9,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-sensible'
 
 Plugin 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
+Plugin 'Nopik/vim-nerdtree-direnter'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
