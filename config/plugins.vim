@@ -35,5 +35,5 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'joshdick/onedark.vim'
 
 " Markdown and LaTex
-Plugin 'gabrielelana/vim-markdown'
-Plugin 'xuhdev/vim-latex-live-preview'
+" Plugin 'gabrielelana/vim-markdown'
+" Plugin 'xuhdev/vim-latex-live-preview'
